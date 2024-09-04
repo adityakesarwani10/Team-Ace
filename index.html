@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Train Reservation Form</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Our new project is working.</p>
+    <h2>Train Reservation Form</h2>
+    <form action="/submit_reservation" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="trainNumber">Train Number:</label><br>
+        <input type="text" id="trainNumber" name="trainNumber" required><br><br>
+        
+        <label for="date">Date of Journey:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="class">Class:</label><br>
+        <select id="class" name="class" required>
+            <option value="sleeper">Sleeper</option>
+            <option value="ac1">AC 1</option>
+            <option value="ac2">AC 2</option>
+            <option value="ac3">AC 3</option>
+        </select><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        
+        <input type="submit" value="Reserve">
+    </form>
 </body>
 </html>
